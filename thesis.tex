@@ -1,0 +1,262 @@
+
+\emptypage
+
+% ============================================================================
+%  Ackowledgements
+% ============================================================================
+\chapternonum{Acknowledgements}
+
+thank you 'n stuff
+
+\emptypage
+
+% ============================================================================
+% Table of contents
+% ============================================================================
+
+\singlespace
+\dominitoc
+\renewcommand{\leftmark}{Contents}
+
+\tableofcontents
+
+\emptypage
+
+% ============================================================================
+%   Introducton
+% ============================================================================
+
+\onehalfspacing
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\chapternonum{Introduction}
+
+% Quotes are cool
+\begin{center}
+\begin{minipage}{0.95\textwidth}
+\emph{« Do, or do not. There is no try »}\\
+\hspace*{0.4\textwidth} Master Yoda, \emph{The Empire Strikes Back}
+\end{minipage}
+\end{center}
+
+\vspace*{0.5cm}
+
+Cat ipsum dolor sit amet, fall over dead (not really but gets sypathy) but bathe
+private parts with tongue then lick owner's face, sit in box, and chase red
+laser dot. Caticus cuteicus ignore the squirrels, you'll never catch them
+anyway, poop on grasses for leave hair everywhere, for lick arm hair. Sleep in
+the bathroom sink purr for no reason tuxedo cats always looking dapper so
+scratch leg; meow for can opener to feed me for paw at your fat belly yet steal
+the warm chair right after you get up purr while eating. Immediately regret
+falling into bathtub knock dish off table head butt cant eat out of my own dish
+so touch water with paw then recoil in horror so roll on the floor purring your
+whiskers off.
+
+Poop on grasses when in doubt, wash. Cat slap dog in face stand in front of the
+computer screen, and drink water out of the faucet but swat at dog, for chase
+ball of string. Chase the pig around the house sweet beast immediately regret
+falling into bathtub, sleep in the bathroom sink or wake up human for food at
+4am chirp at birds but chase after silly colored fish toys around the house.
+Chew iPad power cord fall over dead (not really but gets sypathy), chase laser
+for i am the best intrigued by the shower, yet thug cat . Sleep nap sleep nap
+and cat snacks. Flop over scratch the furniture yet chase the pig around the
+house and refuse to leave cardboard box. Ignore the squirrels, you'll never
+catch them anyway behind the couch, or climb leg, and hiss at vacuum cleaner
+refuse to leave cardboard box. Behind the couch i am the best, yet touch water
+with paw then recoil in horror hate dog, yet hide at bottom of staircase to trip
+human for destroy couch as revenge jump launch to pounce upon little yarn mouse,
+bare fangs at toy run hide in litter box until treats are fed.
+
+Spread kitty litter all over house flop over sun bathe pelt around the house and
+up and down stairs chasing phantoms hide head under blanket so no one can see
+but cat slap dog in face. Claw drapes meow for food, then when human fills food
+dish, take a few bites of food and continue meowing yet under the bed get video
+posted to internet for chasing red dot and has closed eyes but still sees you
+stick butt in face. Destroy the blinds. Chase after silly colored fish toys
+around the house knock dish off table head butt cant eat out of my own dish and
+you call this cat food? and meow and hide head under blanket so no one can see
+or pooping rainbow while flying in a toasted bread costume in space. Hide when
+guests come over meow all night having their mate disturbing sleeping humans eat
+a plant, kill a hand poop in the plant pot or pooping rainbow while flying in a
+toasted bread costume in space.
+
+Claw drapes chase laser, for meow yet behind the couch.  Chase the pig around
+the house immediately regret falling into bathtub stare at ceiling, so chase
+ball of string yet intrigued by the shower, so all of a sudden cat goes crazy,
+or hide when guests come over. Purr while eating thug cat spot something, big
+eyes, big eyes, crouch, shake butt, prepare to pounce lounge in doorway for curl
+into a furry donut. Scratch the furniture wake up human for food at 4am pelt
+around the house and up and down stairs chasing phantoms or when in doubt, wash
+favor packaging over toy swat turds around the house and spot something, big
+eyes, big eyes, crouch, shake butt, prepare to pounce. Hunt anything that moves.
+Stare at ceiling eat from dog's food. Scratch the furniture climb leg.
+
+% ============================================================================
+%   Chapter 1 : How to become a ninja
+% ============================================================================
+\setcounter{mtc}{2}
+\chapterwithnum{How to become a ninja}
+\vspace*{-0.7cm}
+\begin{center}
+\begin{minipage}{0.95\textwidth}
+\emph{« Don't believe everything you read on the Internet just because there's a
+picture with a quote next to it. »}\\
+\hspace*{0.75\textwidth} Abraham Lincoln
+\end{minipage}
+\end{center}
+\minitoc
+\newpage
+% ============================================================================
+
+\section{Pro tips \label{sec:proTips}}
+
+    \subsection{Vim is your bro}
+
+    So you want to write a thesis bruh. You can write some cool text like this.
+    And some cool text like that. You can keep you text nicely wrapped by
+    putting
+    \begin{verbatim}
+        set textwidth=80        " Go to new line if you write further than 80 column
+        set colorcolumn=80      " Display limit at column=80
+    \end{verbatim}
+    in your .vimrc, and using « gq » in vim to nicely rewrap a block of text you
+    just edited.
+
+    \subsection{Macros}
+
+    There are some cool macros defined in template/macros.tex. For instance you
+    can make reference like this : \refsection{sec:proTips}.
+
+    For math stuff, don't hesitate to use macros, especially for units.
+    You can have equations like this (\refequation{eq:someEquation} and
+    \refequation{eq:someOtherEquation}) :
+    % One line only
+    \eq{someEquation}
+    {
+        \pT = 5\TeV
+    }
+    and
+    % Several lines, aligned according to the &
+    \eqalign{someOtherEquation}
+    {
+        \mass{t}                                 & = 172\GeV    \nonumber\\
+        \mathcal{L}                              & = 20\invfb   \nonumber\\
+        \sigma(pp \rightarrow \text{barbapapas}) & = 42\pb
+    }
+    For stuff specific to your work, you sould also create macros in
+    ./template/macros.tex to avoid typing identical bunches of stuff hundreds of
+    times.
+
+    \subsection{Figures}
+
+    Keep your images and stuff organized in ./assets/ (you might have a lot of
+    them). There are some macros to easily add plots without the whole
+    begin{figure} crap. Checkout \reffig{fig:meme/doge} and
+    \reffig{fig:cats/twoCats}.
+
+    \insertFigure{meme/doge} % Filename = label
+                 {0.6}       % Width, in fraction of the whole page width
+                 {Representation of the Higgs potential with $\mu^2 < 0$ and
+                 $\lambda > 0$.} % Caption
+
+    \insertTwoFigures{cats/twoCats} % The label for the figure containing the two pics
+                     {cats/2}       % Filename 1
+                     {cats/3}       % Filename 2
+                     {0.3}         % Width of each image
+                     {Sketch of the underground installation showing the SPS,
+                     the injection tunnels, the LHC, as well as the four
+                     experiments.}
+                     % Caption
+
+    % (this doesn't suits every needs, so sometimes you have to do the whole
+    % stuff manually yourself)
+
+    \subsection{Biblio}
+
+    The bibliography stuff is in ./biblio.tex. You can cite as usual with
+    \cite{topPtReweighting}. In biblio.tex, you can add easily hyperlinks using
+    the DOI, arXiv number, PAS id, CDS id, ...
+
+    \subsection{Notes}
+
+    You can leave yourself notes/todo, such as \refNeeded
+
+    or :
+
+    \todo{write the rest of the thesis}
+
+    \subsection{Compile}
+
+    To compile, just type « make ». Maybe two times if you care about updating
+    the table of content and/or references.
+
+    \textbf{Beware} that some actually useful LaTeX error might be filtered out.
+    For deep debugging, you can open template/Makefile and comment the line
+    starting with ERROR_PARSING=... and recompile.
+
+% ============================================================================
+%   Bibliography
+% ============================================================================
+
+\emptypage
+\emptypage
+
+\singlespace
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\renewcommand{\leftmark}{Bibliography}
+
+\begin{thebibliography}{2}
+
+    \input{../biblio.tex}
+
+\end{thebibliography}
+
+\newpage
+\thispagestyle{empty}
+
+% ============================================================================
+%   Summaries
+% ============================================================================
+
+\newgeometry{top=0.8cm, bottom=0.7cm, left=0.95cm, right=0.95cm, bindingoffset=0cm}
+
+\begin{center}
+    \textbf{\Large{Chuck Norris}}\\
+    \textbf{\Large{How I excluded SUSY\\forevar\vspace*{0.3cm}}}
+\end{center}
+
+\begin{textblock}{0}[0,0](0.5,0.32)
+{
+    \setlength{\fboxsep}{0.7pt}
+    \setlength{\fboxrule}{1pt}
+    \includegraphics[height=2.2cm]{logo/uds}
+}
+\end{textblock}
+\begin{textblock}{0}[0,0](13.4,0.28)
+{
+    \setlength{\fboxsep}{0.7pt}
+    \setlength{\fboxrule}{1pt}
+    \includegraphics[width=2.2cm]{logo/CNRS}
+}
+\end{textblock}
+\small
+\begin{framed}
+    \vspace*{-0.7cm}
+\begin{center}\textsc{Résumé}\end{center}
+    \vspace*{-0.4cm}
+    Wow much physic, very nobel prize
+
+    \textsc{Mot-clés} : physique des particules, LHC, CMS, identification des
+    jets de quark beau, recherche de nouvelle physique, supersymétrie
+\end{framed}
+\vspace*{-0.2cm}
+\begin{framed}
+    \vspace*{-0.7cm}
+\begin{center}\textsc{Abstract}\end{center}
+    \vspace*{-0.4cm}
+    Wow much physic, very nobel prize
+
+    \textsc{Keywords}: particle physics, LHC, CMS, $b$-tagging, search for new
+    physics, supersymmetry
+\end{framed}

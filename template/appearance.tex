@@ -1,0 +1,52 @@
+
+% Margins
+\geometry{a4paper, top=3cm, bottom=2.5cm, left=2cm, right=2cm, bindingoffset=1cm}
+
+% Hyperref config
+\definecolor{myLinkColor}{rgb}{0.10, 0.20, 0.50}
+\definecolor{myCiteColor}{rgb}{0.90, 0.30, 0.20}
+\hypersetup{
+    colorlinks   = true, % Colours links instead of ugly boxes
+    urlcolor     = myLinkColor, % Colour for external hyperlinks
+    linkcolor    = myLinkColor, % Colour of internal links
+    citecolor    = myCiteColor   % Colour of citations
+}
+
+% Sections format
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+\titleformat*{\subsubsection}{\bfseries}
+
+% Chapter title format
+\titleformat{\chapter}[display]{\bfseries\huge\vspace*{-2cm}}
+{Chapter \ \thechapter\\ \rule{\textwidth}{0.5pt}\vspace*{-0.7cm} }
+{-2ex}
+{ % before-code
+    \centering
+}
+[ % after-code
+    \vspace{-2ex}
+    \rule{\textwidth}{0.5pt}
+]
+
+% ToC depth
+\setcounter{tocdepth}{2}
+
+% Itemize style
+\renewcommand\labelitemi{--}
+
+% 1.5 space between lines
+\onehalfspacing
+
+% Space between paragraphs
+\setlength{\parskip}{8pt}
+
+% Header and footer style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\MakeUppercase{\leftmark}}
+\fancyhead[RE,LO]{}
+\fancyfoot[CE,CO]{}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}

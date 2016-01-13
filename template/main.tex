@@ -1,0 +1,38 @@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{book}
+
+    \input{packages.tex}
+
+    \input{macros.tex}
+
+    \input{appearance.tex}
+
+    % Img paths
+    \graphicspath{{../assets/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \hypersetup
+    {
+        pdfauthor={Chuck Norris},
+        pdftitle={How I excluded SUSY forevar},
+        pdfproducer={Latex with hyperref},
+    }
+
+
+\begin{document}
+
+    \pagenumbering{roman}
+
+    \setcounter{page}{1}
+
+    \input{../title.tex}
+
+    \setcounter{page}{2}
+
+    \input{../thesis.tex}
+
+\end{document}
